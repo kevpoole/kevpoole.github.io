@@ -2,7 +2,7 @@
 var blup = document.querySelector('.blup');
 
 function setProperty(duration) {
-  blup.style.setProperty('--animation-time', duration +'s');
+  blup.style.setProperty('--animation-time', 2 +'s');
 }
 
 function changeAnimationTime() {
