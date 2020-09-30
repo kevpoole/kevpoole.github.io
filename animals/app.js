@@ -1,4 +1,3 @@
-var time = Math.random();
 
 var blup = document.querySelector('.blup');
 
