@@ -25,7 +25,6 @@ function howMany() {
   let satanInput = document.createElement("input");
   satanInput.setAttribute("type", "text");
   satanInput.setAttribute("id", "satan-input");
-  satanInput.setAttribute("class", "satan-input");
 
   let subBut = document.createElement('button');
   let butText = document.createTextNode("submit");

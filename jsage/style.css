@@ -103,7 +103,7 @@ p {
 #moreSatan2:hover {
   transform: scale(110%);
 }
-.satan-input {
+#satan-input {
   border: none;
   border-bottom: 1px solid black;
   outline: none;
