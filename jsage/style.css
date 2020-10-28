@@ -107,7 +107,7 @@ p {
 #satan-input {
   
   border: 1px solid black;
-  border radius: none;
+  border-radius: none;
   outline: none;
   text-align: center;
   font-size: 1.5rem;
