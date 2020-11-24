@@ -1,17 +1,21 @@
 @media screen {
   body {
     background-image: url(./png/backg.png);
-    background-repeat: no-repeat;
     align-items: flex-start;
   }
 
+  .pic {
+    height: 250px;
+    width: 250px;
+  }
+
   .eyes {
-    top: 33.5%;
+    top: 30.5%;
     width: 26%;
     height: 5.5%;
   }
   .blank {
-    top: 34%;
+    top: 31%;
     width: 35%;
   }
 }
