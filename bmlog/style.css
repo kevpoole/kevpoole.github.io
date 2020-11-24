@@ -6,36 +6,39 @@
 
 body {
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   background-image: url(./png/backg.png);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .pic {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
+  height: 500px;
+  width: 500px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .guy {
   width: 100%;
   height: 100%;
-  scale: 100%;
   position: absolute;
-  /* top: 15%; */
 }
 
 .eyes {
   position: absolute;
-  top: 30.3%;
+  /* padding-left: 1rem; */
+  top: 30.6%;
   right: 39.5%;
   z-index: -1;
-  width: 25%;
+  width: 27%;
   height: 5.2%;
-  animation: eyes 4s ease alternate infinite;
+  background-color: white;
+  animation: eyes 5s ease infinite;
   transform: rotate(2deg);
 }
 
@@ -44,22 +47,27 @@ body {
   top: 30%;
   background-color: white;
   height: 10%;
-  width: 25%;
+  width: 35%;
   z-index: -2;
 }
 
 @keyframes eyes {
   0% {
-    right: 39.5%;
+    right: 40%;
   }
   20% {
-    right: 39.5%;
+    right: 40%;
   }
-  /*  */
-  80% {
-    right: 35%;
+  70% {
+    right: 32.5%;
+  }
+  75% {
+    right: 36.5%;
+  }
+  90% {
+    right: 36.5%;
   }
   100% {
-    right: 35%;
+    right: 39.5%;
   }
 }
