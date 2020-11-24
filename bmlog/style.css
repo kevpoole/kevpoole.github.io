@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./png/backg.png);
+}
+
+.pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.guy {
+  max-width: 100%;
+  max-height: 100%;
+  scale: 70%;
+  position: absolute;
+  top: 15%;
+}
+
+.eyes {
+  position: absolute;
+  top: 45.3%;
+  right: 39.5%;
+  /* right: 35%; */
+  z-index: -1;
+  width: 25%;
+  height: 5.2%;
+  animation: eyes 4s ease alternate infinite;
+  transform: rotate(2deg);
+  /* background-color: red; */
+}
+
+.blank {
+  position: absolute;
+  background-color: white;
+  height: 10%;
+  min-width: 25%;
+  z-index: -2;
+}
+
+@keyframes eyes {
+  0% {
+    right: 39.5%;
+  }
+  20% {
+    right: 39.5%;
+  }
+  /*  */
+  80% {
+    right: 35%;
+  }
+  100% {
+    right: 35%;
+  }
+}
