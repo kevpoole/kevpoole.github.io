@@ -2,17 +2,17 @@
   body {
     background-image: url(./png/backg2.png);
   }
-  .guy {
-    top: -20%;
+  .pic {
+    align-items: flex-start;
   }
 
   .eyes {
-    top: 23%;
+    top: 38%;
     width: 25%;
     height: 5.5%;
   }
   .blank {
-    top: 20%;
+    top: 38%;
     width: 35%;
   }
 }
