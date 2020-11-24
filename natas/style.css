@@ -117,8 +117,8 @@ input::after {
 img {
   animation: pig 30s linear infinite;
   position: absolute;
-  top: 12rem;
-  opacity: 40%;
+  top: 11rem;
+  opacity: 30%;
 }
 
 @keyframes pig {
