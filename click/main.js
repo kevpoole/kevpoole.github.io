@@ -18,10 +18,11 @@ function oink (){
 
 
 btn1.addEventListener('click', clickOn)
-btn1Div.addEventListener('click', () => {
-    const oink = new Audio('./audio/oink_1.mp3')
-    oink.play()
-})
+btn1Div.addEventListener('click', oink)
+// btn1Div.addEventListener('click', () => {
+//     const oink = new Audio('./audio/oink_1.mp3')
+//     oink.play()
+// })
 
     
 
