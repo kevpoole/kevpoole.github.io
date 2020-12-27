@@ -7,13 +7,16 @@ const buttons = Array.from(document.querySelectorAll('button'))
 const pigPic = document.querySelector(".spindiv")
 let pigDiv = document.createElement("div")
 let addPig = pigDiv.classList.add("pigsmile")
+const oinkPlay = document.getElementById('oink')
+oinkPlay.preload = "auto"
+
 
 let pigSmile = document.querySelector(".pigsmile")
 
 
 function oink (){
-    const oink = document.getElementById('oink')
-    oink.play()
+    
+    oinkPlay.play()
 }
 
 
