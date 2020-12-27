@@ -1,4 +1,5 @@
 const btn1 = document.querySelector('[data-button="btn1"]');
+const btn1Div = document.querySelector('.btn1-div')
 const btn2 = document.querySelector('[data-button="btn2"]');
 const btn3 = document.querySelector('[data-button="btn3"]');
 // const btn4 = document.querySelector('[data-button="btn4"]');
@@ -10,14 +11,19 @@ let addPig = pigDiv.classList.add("pigsmile")
 let pigSmile = document.querySelector(".pigsmile")
 
 
-
+function oink (){
+    const oink = document.getElementById('oink')
+    oink.play()
+}
 
 
 btn1.addEventListener('click', clickOn)
-btn1.addEventListener('click', () => {
+btn1Div.addEventListener('click', () => {
     const oink = new Audio('./audio/oink_1.mp3')
     oink.play()
 })
+
+    
 
 
 
