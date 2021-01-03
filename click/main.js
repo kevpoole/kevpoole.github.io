@@ -7,36 +7,34 @@ const buttons = Array.from(document.querySelectorAll('button'))
 const pigPic = document.querySelector(".spindiv")
 let pigDiv = document.createElement("div")
 let addPig = pigDiv.classList.add("pigsmile")
-const oinkPlay = document.getElementById('oink')
-oinkPlay.preload = "auto"
+// const oinkPlay = document.getElementById('oink')
+// oinkPlay.preload = "auto"
 
 
 let pigSmile = document.querySelector(".pigsmile")
 
-
-function oink (){
-    
-    oinkPlay.play()
-}
+// function oink (){
+//     oinkPlay.play()
+// }
 
 
 btn1.addEventListener('click', clickOn)
-btn1Div.addEventListener('click', oink)
-// btn1Div.addEventListener('click', () => {
-//     const oink = new Audio('./audio/oink_1.mp3')
-//     oink.play()
-// })
-
-    
-
-
+// btn1Div.addEventListener('click', oink)
+btn1Div.addEventListener('click', () => {
+    const oink = new Audio('./audio/oink_1.mp3')
+    oink.play()
+})
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
     button.classList.toggle('clkd')
-    setTimeout(() => button.classList.remove('clkd'), 175)
+    setTimeout(() => button.classList.remove('clkd'), 200)
 })
-})
+})  
+
+
+
+
 
     
 
@@ -46,6 +44,7 @@ function clickOn () {
     btn1.addEventListener('click', pigRemove)
     btn2.addEventListener('click', pigAnimate)
     btn3.addEventListener('click', pigPulse) 
+    
 }
 
 function pigRemove () {
@@ -74,6 +73,9 @@ function pigPulse (){
         pigDiv.classList.toggle("pulse")
     })
 }
+
+
+
 
 
 
